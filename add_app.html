@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>إضافة تطبيق - تطبيقات الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="myFunctions.js" defer></script>
+  </head>
+  <body class="add-page" data-page="add">
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-left">
+          <a href="home.html" class="nav-link">الرئيسية</a>
+          <a href="aboutus.html" class="nav-link">من نحن</a>
+        </div>
+        <div class="nav-center">
+          <span class="nav-current">إضافة تطبيق</span>
+        </div>
+        <div class="nav-right">
+          <a href="apps.html" class="nav-link">التطبيقات</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="fade-scroll">إضافة تطبيق جديد</h1>
+
+      <form id="addAppForm" class="fade-scroll">
+        <label>اسم التطبيق</label>
+        <input type="text" id="appName" required />
+
+        <label>اسم الشركة</label>
+        <input type="text" id="appCompany" required />
+
+        <label>الموقع الإلكتروني (URL)</label>
+        <input type="url" id="url" placeholder="https://example.com" />
+
+        <label>مجاني / غير مجاني</label>
+        <select id="appFree" required>
+          <option value="">-- اختر --</option>
+          <option value="مجاني">مجاني</option>
+          <option value="غير مجاني">غير مجاني</option>
+        </select>
+
+        <label>مجال الاستخدام</label>
+        <select id="appField" required>
+          <option value="">-- اختر المجال --</option>
+          <option value="تعليمي">تعليمي</option>
+          <option value="كتابة">كتابة</option>
+          <option value="ترجمة">ترجمة</option>
+          <option value="تحليل">تحليل</option>
+          <option value="أخرى">أخرى</option>
+        </select>
+
+        <label>شرح مختصر</label>
+        <textarea id="appDescription" required></textarea>
+
+        <div style="display: flex; gap: 12px">
+          <input type="submit" value="إرسال" />
+          <input type="reset" value="إعادة" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>© جميع الحقوق محفوظة لمجموعة طلاب الذكاء الاصطناعي</p>
+    </footer>
+  </body>
+</html>

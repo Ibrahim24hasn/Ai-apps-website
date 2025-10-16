@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>التطبيقات - تطبيقات الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="myFunctions.js" defer></script>
+  </head>
+  <body class="apps-page" data-page="apps">
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-left">
+          <a href="home.html" class="nav-link">الرئيسية</a>
+          <a href="aboutus.html" class="nav-link">من نحن</a>
+        </div>
+        <div class="nav-center">
+          <span class="nav-current">التطبيقات</span>
+        </div>
+        <div class="nav-right">
+          <a href="add_app.html" class="nav-link">إضافة تطبيق</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="fade-scroll">تطبيقات الذكاء الاصطناعي</h1>
+
+      <table id="appsTable" class="fade-scroll">
+        <thead>
+          <tr>
+            <th>اسم التطبيق</th>
+            <th>الشركة</th>
+            <th>المجال</th>
+            <th>مجاني / غير مجاني</th>
+            <th>التفاصيل</th>
+          </tr>
+        </thead>
+        <tbody id="appsBody">
+          <tr>
+            <td>ChatGPT</td>
+            <td>OpenAI</td>
+            <td>تعليمي</td>
+            <td>مجاني / مدفوع</td>
+            <td class="toggle-cell">إظهار التفاصيل</td>
+          </tr>
+          <tr class="details-row">
+            <td colspan="5">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png"
+                width="80"
+                alt="ChatGPT"
+              />
+              <p>
+                <strong>الوصف:</strong> روبوت دردشة ذكي يجيب على الأسئلة وينشئ
+                النصوص ويساعد في الدراسة والبرمجة.
+              </p>
+              <p>
+                <strong>رابط الموقع:</strong>
+                <a href="https://chat.openai.com" target="_blank"
+                  >chat.openai.com</a
+                >
+              </p>
+              <audio controls>
+                <source src="audio/chatgpt.mp3" type="audio/mpeg" />
+              </audio>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Grammarly</td>
+            <td>Grammarly Inc.</td>
+            <td>كتابة</td>
+            <td>مجاني / مدفوع</td>
+            <td class="toggle-cell">إظهار التفاصيل</td>
+          </tr>
+          <tr class="details-row">
+            <td colspan="5">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968884.png"
+                width="80"
+                alt="Grammarly"
+              />
+              <p>
+                <strong>الوصف:</strong> أداة لتصحيح الأخطاء اللغوية وتحسين
+                الأسلوب الكتابي باللغة الإنجليزية.
+              </p>
+              <p>
+                <strong>رابط الموقع:</strong>
+                <a href="https://www.grammarly.com" target="_blank"
+                  >grammarly.com</a
+                >
+              </p>
+              <audio controls>
+                <source src="audio/grammarly.mp3" type="audio/mpeg" />
+              </audio>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Google Lens</td>
+            <td>Google</td>
+            <td>تحليل الصور</td>
+            <td>مجاني</td>
+            <td class="toggle-cell">إظهار التفاصيل</td>
+          </tr>
+          <tr class="details-row">
+            <td colspan="5">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3004/3004613.png"
+                width="80"
+                alt="Google Lens"
+              />
+              <p>
+                <strong>الوصف:</strong> تطبيق للتحليل البصري والتعرف على النصوص
+                والأشياء داخل الصور.
+              </p>
+              <p>
+                <strong>رابط الموقع:</strong>
+                <a href="https://lens.google" target="_blank">lens.google</a>
+              </p>
+              <audio controls>
+                <source src="audio/googlelens.mp3" type="audio/mpeg" />
+              </audio>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Replika</td>
+            <td>Luka Inc.</td>
+            <td>محادثة</td>
+            <td>مجاني / مدفوع</td>
+            <td class="toggle-cell">إظهار التفاصيل</td>
+          </tr>
+          <tr class="details-row">
+            <td colspan="5">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4712/4712108.png"
+                width="80"
+                alt="Replika"
+              />
+
+              <p>
+                <strong>الوصف:</strong> روبوت دردشة صديق يعتمد على الذكاء
+                الاصطناعي ويُحاكي المحادثات البشرية.
+              </p>
+              <p>
+                <strong>رابط الموقع:</strong>
+                <a href="https://replika.ai" target="_blank">replika.ai</a>
+              </p>
+              <audio controls>
+                <source src="audio/replika.mp3" type="audio/mpeg" />
+              </audio>
+            </td>
+          </tr>
+
+          <tr>
+            <td>DeepL</td>
+            <td>DeepL GmbH</td>
+            <td>ترجمة</td>
+            <td>مجاني / مدفوع</td>
+            <td class="toggle-cell">إظهار التفاصيل</td>
+          </tr>
+          <tr class="details-row">
+            <td colspan="5">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4712/4712104.png"
+                width="80"
+                alt="DeepL"
+              />
+
+              <p>
+                <strong>الوصف:</strong> مترجم يعتمد على الذكاء الاصطناعي ويُقدّم
+                جودة ترجمة عالية.
+              </p>
+              <p>
+                <strong>رابط الموقع:</strong>
+                <a href="https://deepl.com" target="_blank">deepl.com</a>
+              </p>
+              <audio controls>
+                <source src="audio/deepl.mp3" type="audio/mpeg" />
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; margin-top: 18px">
+        <button class="delete-btn" id="clearBtn">حذف التطبيقات المضافة</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>© جميع الحقوق محفوظة لمجموعة طلاب الذكاء الاصطناعي</p>
+    </footer>
+  </body>
+</html>
