@@ -67,7 +67,7 @@
         return;
       }
 
-      // remove previously rendered user-app rows
+     
       Array.from(tbody.querySelectorAll("tr.user-app")).forEach(function (r) {
         r.remove();
       });
@@ -117,11 +117,11 @@
     }
   }
 
-  // attach handlers safely (لا نعتمد على data-page فقط)
+ 
   function init() {
     log("myFunctions.js init");
 
-    // Fade-scroll initial reveal (كما كان سابقاً)
+
     Array.from(document.querySelectorAll(".fade-scroll")).forEach(function (
       el
     ) {
@@ -131,7 +131,7 @@
       } catch (e) {}
     });
 
-    // If apps page present -> render apps and wire clear button
+   
     if (
       document.querySelector("body.apps-page") ||
       document.body.dataset.page === "apps"
@@ -148,7 +148,7 @@
       }
     }
 
-    // If add page present -> wire form submit directly (لا نعتمد على dataset فقط)
+    
     var form = document.getElementById("addAppForm");
     if (form) {
       log("detected add form, attaching submit handler");
@@ -175,13 +175,28 @@
             alert("الرجاء ملء الحقول الأساسية (الاسم، الشركة، المجال).");
             return;
           }
+             var appNameRegex = /^[A-Za-z]+$/;
+          if (!appNameRegex.test(app.name)) {
+            alert(
+              "اسم التطبيق يجب أن يحتوي على أحرف إنجليزية فقط بدون فراغات."
+            );
+            nameEl.focus();
+            return;
+          }
+
+          var companyNameRegex = /^[A-Za-z ]+$/;
+          if (!companyNameRegex.test(app.company)) {
+            alert("اسم الشركة يجب أن يحتوي على أحرف إنجليزية فقط.");
+            companyEl.focus();
+            return;
+          }
 
           saveApp(app);
           log("App saved:", app);
           alert("تم حفظ التطبيق بنجاح. سيتم الانتقال إلى صفحة التطبيقات.");
           form.reset();
 
-          // Redirect to apps.html (إذا كنت تريد البقاء، غير هذا السطر)
+      
           setTimeout(function () {
             window.location.href = "apps.html";
           }, 600);
@@ -202,4 +217,5 @@
     init();
   }
 })();
+
 
