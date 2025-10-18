@@ -208,6 +208,22 @@ th {
   background: rgba(0, 0, 0, 0.06);
   font-weight: 700;
 }
+/* جعل الجدول متجاوب على الشاشات الصغيرة */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
 
 .toggle-cell {
   cursor: pointer;
@@ -414,3 +430,4 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
 }
+
