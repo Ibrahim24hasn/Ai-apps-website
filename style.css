@@ -444,25 +444,34 @@ footer {
     width: 90%;
   }
 
-  .table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+.table-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* ✅ يجعل الجدول في المنتصف */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0;          /* مسافة صغيرة من الأعلى والأسفل */
+}
 
-  .table-wrapper table {
-    min-width: 600px;
-  }
+.table-wrapper table {
+  min-width: 600px;         /* لضمان عرض الجدول الكامل عند التمرير */
+  border-collapse: collapse;
+  margin: 0 auto;           /* تأكيد محاذاة الجدول في الوسط */
+}
 
-  th, td {
-    font-size: 14px;
-    padding: 10px 8px;
-  }
+.table-wrapper th, 
+.table-wrapper td {
+  text-align: center;
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
 
   footer {
     font-size: 13px;
     padding: 10px;
   }
 }
+
 
 
