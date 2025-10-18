@@ -35,20 +35,20 @@ body {
 }
 
 body.home-page {
-  background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926");
+  background-image: url("images/home-bg.jpg");
 }
 body.about-page {
-  background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+  background-image: url("images/about-bg.jpg");
 }
 body.apps-page {
-  background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+  background-image: url("images/apps-bg.jpg");
 }
 body.add-page {
   background-image: linear-gradient(
       rgba(0, 102, 204, 0.24),
       rgba(0, 0, 102, 0.36)
     ),
-    url("https://images.unsplash.com/photo-1555949963-aa79dcee981c");
+    url("images/add-bg.jpg");
 }
 
 body.home-page,
@@ -466,6 +466,7 @@ footer {
     padding: 10px;
   }
 }
+
 
 
 
